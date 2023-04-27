@@ -19,6 +19,7 @@ const App = () => {
 
   return (
     <div>
+      {/* on form submission a new image would be generated holding the caption you typed on the Input field */}
       <form onSubmit={generateImage}>
         <label>
           Caption:
@@ -26,6 +27,8 @@ const App = () => {
         </label>
         <button type="submit">Generate Image</button>
       </form>
+      
+      {/* displays the image after submit */}
       {imageUrl && (
         <img src={imageUrl} alt="GeneratedImage" />
       )}
